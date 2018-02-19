@@ -1,28 +1,28 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-body{
+body {
   hyphens: auto;
   -epub-hyphens: auto;
 }
 
-section[epub|type~="titlepage"]{
+section[epub|type~="titlepage"] {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-section[epub|type~="titlepage"] img{
+section[epub|type~="titlepage"] img {
   width: 100%;
   margin-top: 10%;
 }
 
-p{
+p {
   margin: 0;
   text-indent: 1em;
 }
 
-hr{
+hr {
   border: none;
   border-top: 1px solid;
   height: 0;
@@ -31,7 +31,7 @@ hr{
 }
 
 q::before,
-q::after{
+q::after {
   content: '';
 }
 
@@ -40,7 +40,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-variant: small-caps;
   hyphens: none;
   -epub-hyphens: none;
@@ -60,81 +60,81 @@ hr + p,
 ol + p,
 ul + p,
 table + p,
-p:first-child{
+p:first-child {
   text-indent: 0;
 }
 
-cite{
+cite {
   font-style: normal;
 }
 
-abbr{
+abbr {
   border: none;
   white-space: nowrap;
 }
 
-blockquote cite{
+blockquote cite {
   display: block;
   font-style: italic;
   text-align: right;
 }
 
-blockquote cite i{
+blockquote cite i {
   font-style: normal;
 }
 
-strong{
+strong {
   font-weight: normal;
   font-variant: all-small-caps;
 }
 
-a[epub|type~="noteref"]{
+a[epub|type~="noteref"] {
   font-size: .75em;
   vertical-align: super;
 }
 
-section[epub|type~="rearnotes"] > ol > li{
+section[epub|type~="rearnotes"] > ol > li {
   margin: 1em 0;
 }
 
 section[epub|type~="colophon"],
-section[epub|type~="imprint"]{
+section[epub|type~="imprint"] {
   text-align: center;
 }
 
 section[epub|type~="colophon"] header,
-section[epub|type~="imprint"] header{
+section[epub|type~="imprint"] header {
   font-size: 0;
   margin: 5% auto;
 }
 
 section[epub|type~="colophon"] h2,
-section[epub|type~="imprint"] h2{
+section[epub|type~="imprint"] h2 {
   display: none;
 }
 
-img[epub|type~="z3998:publisher-logo"]{
+img[epub|type~="z3998:publisher-logo"] {
   max-width: 25%;
 }
 
 section[epub|type~="colophon"] p,
-section[epub|type~="imprint"] p{
+section[epub|type~="imprint"] p {
   margin: 1em auto;
   text-indent: 0;
 }
 
-section[epub|type~="imprint"] p{
+section[epub|type~="imprint"] p {
   font-size: .75em;
   text-align: justify;
   width: 75%;
 }
 
-a.raw-url{
+a.raw-url {
   hyphens: none;
   -epub-hyphens: none;
 }
 
-section[epub|type~="colophon"] p + p::before{
+section[epub|type~="colophon"] p + p::before {
   border-top: 1px solid;
   content: "";
   display: block;
@@ -145,27 +145,27 @@ section[epub|type~="colophon"] p + p::before{
 section[epub|type~="colophon"] a,
 section[epub|type~="colophon"] .name,
 section[epub|type~="colophon"] .release-date,
-section[epub|type~="colophon"] .revision-date{
+section[epub|type~="colophon"] .revision-date {
   font-variant: small-caps;
 }
 
-section[epub|type~="copyright-page"] p{
+section[epub|type~="copyright-page"] p {
   margin: 1em auto;
   text-indent: 0;
 }
 
-section[epub|type~="copyright-page"] blockquote p{
+section[epub|type~="copyright-page"] blockquote p {
   font-style: italic;
   text-align: left;
   text-indent: 0;
 }
 
-section[epub|type~="copyright-page"] blockquote p span{
+section[epub|type~="copyright-page"] blockquote p span {
   display: block;
   padding-left: 1em;
   text-indent: -1em;
 }
 
-section[epub|type~="copyright-page"] blockquote br{
+section[epub|type~="copyright-page"] blockquote br {
   display: none;
 }
