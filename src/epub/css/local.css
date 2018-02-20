@@ -5,3 +5,21 @@ span[epub|type~="subtitle"] {
   display: block;
   font-weight: normal;
 }
+
+blockquote {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+blockquote header p {
+  text-align: center;
+  text-indent: 0;
+}
+
+blockquote header p:first-child {
+  font-variant: small-caps;
+}
+
+blockquote.report > p {
+  font-style: italic;
+}
