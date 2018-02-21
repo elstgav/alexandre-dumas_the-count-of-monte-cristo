@@ -54,12 +54,14 @@
 		<meta property="meta-auth" refines="#subject-6">https://www.gutenberg.org/ebooks/1184</meta>
 		<meta property="meta-auth" refines="#subject-7">https://www.gutenberg.org/ebooks/1184</meta>
 
-		<meta property="se:subject">TAG</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
+		<meta property="se:subject">Adventure</meta>
+		<meta property="se:subject">Fiction</meta>
+		<dc:description id="description">After suffering years of false imprisonment, Edmond Dantès enacts his revenge upon those responsible.</dc:description>
 		<meta property="meta-auth" refines="#description">https://standardebooks.org</meta>
-		<meta id="long-description" property="se:long-description" refines="#description"><![CDATA[
-			LONGDESCRIPTION
-		]]></meta>
+		<meta id="long-description" property="se:long-description" refines="#description">
+			&lt;p&gt;Edmond Dantès is about to become a captain and marry the girl of his dreams, until he loses everything to a ruthless rival. After years of false imprisonment in the dungeons of Château d’If, he escapes, and discovers the means to enact his revenge: a massive fortune hidden on the island of Monte Cristo. With his newfound wealth and knowledge, he transforms himself into the mysterious Count of Monte Cristo, and enacts what has to be the most elaborate and satisfying revenge story in literary history.&lt;/p&gt;
+			&lt;p&gt;Dumas’ epic tale of suffering and retribution, inspired by a real-life case of wrongful imprisonment, was a huge success when it was first serialized in a Parisian magazine in the 1844. This edition is based on an anonymous English translation first published in 1846.&lt;/p&gt;
+		</meta>
 		<meta property="meta-auth" refines="#long-description">https://standardebooks.org</meta>
 
 		<dc:language>en-US</dc:language>
