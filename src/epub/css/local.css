@@ -15,8 +15,16 @@ span[epub|type~="subtitle"]{
 	font-weight: normal;
 }
 
+section[epub|type~="chapter"] > p:first-of-type::first-letter {
+	font-size: 5.2em;
+	float: left;
+	margin-top: -.3em;
+	margin-right: .1em;
+	margin-bottom: -.4em;
+}
+
 section[epub|type~="chapter"] > p:first-of-type::first-line {
-    font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 blockquote{
