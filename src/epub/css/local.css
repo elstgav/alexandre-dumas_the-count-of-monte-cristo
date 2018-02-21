@@ -1,6 +1,13 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+@font-face {
+	font-family: 'DS Goudy Initialen';
+	src: url('../fonts/DS-Goudy.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 h2[epub|type~="title"]{
 	page-break-inside: avoid;
 	page-break-after:  avoid;
@@ -15,15 +22,16 @@ span[epub|type~="subtitle"]{
 	font-weight: normal;
 }
 
-section[epub|type~="chapter"] > p:first-of-type::first-letter {
-	font-size: 5.2em;
+section[epub|type~="chapter"] > p:first-of-type::first-letter{
+	font-family: 'DS Goudy Initialen';
+	font-size: 4.4em;
 	float: left;
-	margin-top: -.3em;
-	margin-right: .1em;
+	margin-top: -.19em;
+	margin-right: .12em;
 	margin-bottom: -.4em;
 }
 
-section[epub|type~="chapter"] > p:first-of-type::first-line {
+section[epub|type~="chapter"] > p:first-of-type::first-line{
 	font-variant: small-caps;
 }
 
