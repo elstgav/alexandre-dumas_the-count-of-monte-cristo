@@ -78,6 +78,10 @@ blockquote header{
 	text-indent: 0;
 }
 
+figure img{
+		-webkit-filter: saturate(0) contrast(125%) brightness(110%);
+		        filter: saturate(0) contrast(125%) brightness(110%);
+}
 
 table{
 	margin: 1em;
