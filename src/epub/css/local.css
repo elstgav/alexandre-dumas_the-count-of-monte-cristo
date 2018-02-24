@@ -1,25 +1,25 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
-span[epub|type~="subtitle"] {
+span[epub|type~="subtitle"]{
 	display: block;
 	font-weight: normal;
 }
 
-blockquote {
+blockquote{
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
-blockquote header p {
+blockquote header p{
 	text-align: center;
 	text-indent: 0;
 }
 
-blockquote header p:first-child {
+blockquote header p:first-child{
 	font-variant: small-caps;
 }
 
-blockquote.report > p {
+blockquote.report > p{
 	font-style: italic;
 }
