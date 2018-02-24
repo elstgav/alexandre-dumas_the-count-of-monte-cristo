@@ -2,24 +2,24 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 
 span[epub|type~="subtitle"] {
-  display: block;
-  font-weight: normal;
+	display: block;
+	font-weight: normal;
 }
 
 blockquote {
-  margin-left: 1em;
-  margin-right: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 blockquote header p {
-  text-align: center;
-  text-indent: 0;
+	text-align: center;
+	text-indent: 0;
 }
 
 blockquote header p:first-child {
-  font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 blockquote.report > p {
-  font-style: italic;
+	font-style: italic;
 }
