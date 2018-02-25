@@ -7,8 +7,7 @@ span[epub|type~="subtitle"]{
 }
 
 blockquote{
-	margin-left: 1em;
-	margin-right: 1em;
+	margin: 1em;
 }
 
 blockquote header p{
@@ -22,4 +21,26 @@ blockquote header p:first-child{
 
 blockquote.report > p{
 	font-style: italic;
+}
+
+[epub|type~="z3998:letter"]{
+	font-style: italic;
+}
+
+.right-letter-fragment {
+	text-align: right;
+}
+
+[epub|type~="z3998:letter"] footer{
+	page-break-before: avoid;
+	page-break-inside: avoid;
+}
+
+[epub|type~="z3998:letter"] footer [epub|type~="se:letter.dateline"]{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:letter"] p[epub|type~="z3998:sender"]{
+	text-align: right;
+	text-indent: 0;
 }
