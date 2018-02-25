@@ -10,39 +10,35 @@ blockquote{
 	margin: 1em;
 }
 
-blockquote header p{
-	text-align: center;
-	text-indent: 0;
+blockquote:not([epub|type~="z3998:speech"]){
+	font-style: italic;
 }
 
-blockquote header p:first-child{
+blockquote:not([epub|type~="z3998:speech"]) i,
+blockquote:not([epub|type~="z3998:speech"]) em{
+	font-style: normal;
+}
+
+blockquote[epub|type~="z3998:verse"],
+blockquote[epub|type~="z3998:lyrics"]{
+	text-align: center;
+}
+
+blockquote[epub|type~="z3998:verse"] p,
+blockquote[epub|type~="z3998:lyrics"] p{
+	display: inline-block;
+	text-align: left;
+}
+
+blockquote.right-letter-fragment{
+	text-align: right;
+}
+
+blockquote header{
 	font-variant: small-caps;
 	font-style: normal;
-}
-
-blockquote.document,
-[epub|type~="z3998:letter"]{
-	font-style: italic;
-}
-
-blockquote.document i,
-blockquote.document em,
-[epub|type~="z3998:letter"] i,
-[epub|type~="z3998:letter"] em{
-	font-style: normal;
-}
-
-[epub|type~="z3998:letter"][epub|type~="z3998:speech"]{
-	font-style: normal;
-}
-
-[epub|type~="z3998:letter"][epub|type~="z3998:speech"] i,
-[epub|type~="z3998:letter"][epub|type~="z3998:speech"] em{
-	font-style: italic;
-}
-
-.right-letter-fragment{
-	text-align: right;
+	text-align: center;
+	text-indent: 0;
 }
 
 [epub|type~="z3998:salutation"],
