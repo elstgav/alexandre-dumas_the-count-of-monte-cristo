@@ -108,6 +108,16 @@ figure img{
 		        filter: saturate(0) contrast(125%) brightness(110%);
 }
 
+:root[__ibooks_internal_theme*="Gray"] figure img{
+		-webkit-filter: saturate(0) contrast(105%) brightness(90%);
+		        filter: saturate(0) contrast(105%) brightness(90%);
+}
+
+:root[__ibooks_internal_theme*="Night"] figure img{
+		-webkit-filter: saturate(0) contrast(125%) brightness(50%);
+		        filter: saturate(0) contrast(125%) brightness(50%);
+}
+
 table{
 	margin: 1em;
 	font-variant-numeric: tabular-nums;
