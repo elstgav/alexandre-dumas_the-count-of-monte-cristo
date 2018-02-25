@@ -8,6 +8,11 @@
 	font-style: normal;
 }
 
+section[epub|type~="chapter"] > figure:first-child{
+	page-break-inside: avoid;
+	page-break-after:  always;
+}
+
 h2[epub|type~="title"]{
 	page-break-inside: avoid;
 	page-break-after:  avoid;
