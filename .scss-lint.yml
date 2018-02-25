@@ -1,0 +1,20 @@
+exclude:
+  - 'src/epub/css/core.css'
+
+linters:
+  Indentation:
+    enabled: true
+    character: tab
+    width: 1
+
+  MergeableSelector:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  SpaceBeforeBrace:
+    enabled: false
