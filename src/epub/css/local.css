@@ -103,19 +103,19 @@ blockquote header{
 	text-indent: 0;
 }
 
-figure img{
-		-webkit-filter: saturate(0) contrast(125%) brightness(110%);
-		        filter: saturate(0) contrast(125%) brightness(110%);
+img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(125%) brightness(110%);
+	        filter: saturate(0) contrast(125%) brightness(110%); /* scss-lint:disable Indentation */
 }
 
-:root[__ibooks_internal_theme*="Gray"] figure img{
-		-webkit-filter: saturate(0) contrast(105%) brightness(90%);
-		        filter: saturate(0) contrast(105%) brightness(90%);
+:root[__ibooks_internal_theme*="Gray"]  img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(105%) brightness(90%);
+	        filter: saturate(0) contrast(105%) brightness(90%); /* scss-lint:disable Indentation */
 }
 
-:root[__ibooks_internal_theme*="Night"] figure img{
-		-webkit-filter: saturate(0) contrast(125%) brightness(50%);
-		        filter: saturate(0) contrast(125%) brightness(50%);
+:root[__ibooks_internal_theme*="Night"] img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(125%) brightness(50%);
+	        filter: saturate(0) contrast(125%) brightness(50%); /* scss-lint:disable Indentation */
 }
 
 table{
