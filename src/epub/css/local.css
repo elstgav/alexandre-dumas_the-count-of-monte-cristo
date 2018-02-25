@@ -127,3 +127,22 @@ table td:last-child{
 	text-align: right;
 	vertical-align: bottom;
 }
+
+table .dot-leaders td span{
+	background-color: white;
+}
+
+:root[__ibooks_internal_theme*="Gray"]  table .dot-leaders td span{
+	background: -webkit-linear-gradient(#5A5A5C, #5A5A5C);
+}
+
+:root[__ibooks_internal_theme*="Night"] table .dot-leaders td span{
+	background: -webkit-linear-gradient(#121212, #121212);
+}
+
+:root[__ibooks_internal_theme] table .dot-leaders td{
+	background-image: radial-gradient(currentColor .055em, transparent 0);
+	background-size: .9em 1em;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
