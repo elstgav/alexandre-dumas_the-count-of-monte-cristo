@@ -2,6 +2,12 @@ exclude:
   - 'src/epub/css/core.css'
 
 linters:
+  ColorKeyword:
+    enabled: false
+
+  ColorVariable:
+    enabled: false
+
   HexNotation:
     style: uppercase
 
