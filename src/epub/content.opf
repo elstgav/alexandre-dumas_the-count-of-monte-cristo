@@ -109,7 +109,7 @@
 
 		<item href="images/cover.svg"         id="cover"       media-type="image/svg+xml"         properties="cover-image" />
 		<item href="images/logo.svg"          id="logo"        media-type="image/svg+xml"                                  />
-		<item href="images/titlepage.svg"     id="titlepage"   media-type="image/svg+xml"                                  />
+		<item href="images/titlepage.svg"     id="title-image" media-type="image/svg+xml"                                  />
 
 		<item href="toc.xhtml"                id="toc"         media-type="application/xhtml+xml" properties="nav"         />
 
