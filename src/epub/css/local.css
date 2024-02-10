@@ -1,6 +1,18 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+@font-face {
+	font-family: 'DS Goudy Initialen';
+	src: url('../fonts/DS-Goudy.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+section[epub|type~="chapter"] > figure:first-child{
+	page-break-inside: avoid;
+	page-break-after:  always;
+}
+
 h2[epub|type~="title"]{
 	page-break-inside: avoid;
 	page-break-after:  avoid;
@@ -13,6 +25,19 @@ section[epub|type~="chapter"]{
 span[epub|type~="subtitle"]{
 	display: block;
 	font-weight: normal;
+}
+
+section[epub|type~="chapter"] > p:first-of-type::first-letter{
+	font-family: 'DS Goudy Initialen';
+	font-size: 4.4em;
+	float: left;
+	margin-top: -.19em;
+	margin-right: .12em;
+	margin-bottom: -.4em;
+}
+
+section[epub|type~="chapter"] > p:first-of-type::first-line{
+	font-variant: small-caps;
 }
 
 blockquote{
@@ -78,6 +103,28 @@ blockquote header{
 	text-indent: 0;
 }
 
+img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(125%) brightness(110%);
+	        filter: saturate(0) contrast(125%) brightness(110%); /* scss-lint:disable Indentation */
+}
+
+:root[__ibooks_internal_theme*="Gray"]  img[epub|type~="z3998:illustration"],
+:root[__ibooks_internal_theme*="Night"] img[epub|type~="z3998:illustration"]{
+	box-sizing: border-box;
+
+	padding: 2px;
+	border: 5px solid white;
+}
+
+:root[__ibooks_internal_theme*="Gray"]  img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(105%) brightness(70%);
+	        filter: saturate(0) contrast(105%) brightness(70%); /* scss-lint:disable Indentation */
+}
+
+:root[__ibooks_internal_theme*="Night"] img[epub|type~="z3998:illustration"]{
+	-webkit-filter: saturate(0) contrast(125%) brightness(50%);
+	        filter: saturate(0) contrast(125%) brightness(50%); /* scss-lint:disable Indentation */
+}
 
 table{
 	margin: 1em;
@@ -102,4 +149,23 @@ table th:last-child,
 table td:last-child{
 	text-align: right;
 	vertical-align: bottom;
+}
+
+table .dot-leaders td span{
+	background-color: white;
+}
+
+:root[__ibooks_internal_theme*="Gray"]  table .dot-leaders td span{
+	background: -webkit-linear-gradient(#5A5A5C, #5A5A5C);
+}
+
+:root[__ibooks_internal_theme*="Night"] table .dot-leaders td span{
+	background: -webkit-linear-gradient(#121212, #121212);
+}
+
+:root[__ibooks_internal_theme] table .dot-leaders td{
+	background-image: radial-gradient(currentColor .055em, transparent 0);
+	background-size: .9em 1em;
+	background-repeat: repeat-x;
+	background-position: left bottom;
 }

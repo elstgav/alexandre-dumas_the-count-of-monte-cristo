@@ -111,10 +111,14 @@
 		<item href="images/logo.svg"          id="logo"        media-type="image/svg+xml"                                  />
 		<item href="images/titlepage.svg"     id="title-image" media-type="image/svg+xml"                                  />
 
+		<item href="fonts/DS-Goudy.otf"       id="font-goudy"  media-type="application/vnd.ms-opentype"                    />
+
 		<item href="toc.xhtml"                id="toc"         media-type="application/xhtml+xml" properties="nav"         />
 
 		<item href="text/titlepage.xhtml"     id="titlepage"   media-type="application/xhtml+xml" properties="svg"         />
+		<item href="text/frontmatter.xhtml"   id="frontmatter" media-type="application/xhtml+xml"                          />
 		<item href="text/imprint.xhtml"       id="imprint"     media-type="application/xhtml+xml" properties="svg"         />
+		<item href="text/halftitle.xhtml"     id="halftitle"   media-type="application/xhtml+xml"                          />
 
 		<item href="text/chapter-001.xhtml"   id="chapter-001" media-type="application/xhtml+xml"                          />
 		<item href="text/chapter-002.xhtml"   id="chapter-002" media-type="application/xhtml+xml"                          />
@@ -242,7 +246,9 @@
 
 	<spine>
 		<itemref idref="titlepage"/>
+		<itemref idref="frontmatter"/>
 		<itemref idref="imprint"/>
+		<itemref idref="halftitle"/>
 
 		<itemref idref="chapter-001"/>
 		<itemref idref="chapter-002"/>
