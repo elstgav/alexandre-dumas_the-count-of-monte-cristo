@@ -109,6 +109,10 @@ blockquote header{
 	text-indent: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 img[epub|type~="z3998:illustration"]{
 	-webkit-filter: saturate(0) contrast(125%) brightness(110%);
 	        filter: saturate(0) contrast(125%) brightness(110%); /* scss-lint:disable Indentation */
