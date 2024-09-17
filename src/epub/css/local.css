@@ -120,28 +120,8 @@ img[epub|type~="z3998:illustration"]{
 
 		padding: 2px;
 		border: 5px solid white;
-
-		-webkit-filter: saturate(0) contrast(125%) brightness(50%);
-		        filter: saturate(0) contrast(125%) brightness(50%); /* scss-lint:disable Indentation */
+		opacity: 75%;
 	}
-}
-
-:root[__ibooks_internal_theme*="Gray"]  img[epub|type~="z3998:illustration"],
-:root[__ibooks_internal_theme*="Night"] img[epub|type~="z3998:illustration"]{
-	box-sizing: border-box;
-
-	padding: 2px;
-	border: 5px solid white;
-}
-
-:root[__ibooks_internal_theme*="Gray"]  img[epub|type~="z3998:illustration"]{
-	-webkit-filter: saturate(0) contrast(105%) brightness(70%);
-	        filter: saturate(0) contrast(105%) brightness(70%); /* scss-lint:disable Indentation */
-}
-
-:root[__ibooks_internal_theme*="Night"] img[epub|type~="z3998:illustration"]{
-	-webkit-filter: saturate(0) contrast(125%) brightness(50%);
-	        filter: saturate(0) contrast(125%) brightness(50%); /* scss-lint:disable Indentation */
 }
 
 table{
