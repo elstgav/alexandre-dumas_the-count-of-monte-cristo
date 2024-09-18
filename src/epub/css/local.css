@@ -35,11 +35,13 @@ section[epub|type~="chapter"] > p:first-of-type::first-letter{
 	float: left;
 
 	font-family: 'DS Goudy Initialen';
-	font-size: 3.2rlh;
+	font-size: 3.6rlh;
+	font-weight: normal !important; /* Prevent theme bolding */
 	line-height: 1;
 
+	margin-top: -.25rlh;
 	margin-right: .12rem;
-	margin-bottom: -.4rem;
+	margin-bottom: -.75rem;
 }
 
 section[epub|type~="chapter"] > p:first-of-type::first-line{
