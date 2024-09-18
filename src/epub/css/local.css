@@ -128,51 +128,55 @@ img[epub|type~="z3998:illustration"]{
 	}
 }
 
-table{
+table.dot-leaders{
 	margin: 1em;
 	font-variant-numeric: tabular-nums;
 }
 
-table th:not(:first-child),
-table td:not(:first-child) span{
-	padding-left: .5em;
-}
-
-table th:not(:last-child),
-table td:not(:last-child) span{
+table.dot-leaders th:not(:last-child),
+table.dot-leaders td:not(:last-child) span{
 	padding-right: .5em;
 }
 
-table tbody td:first-child{
+table.dot-leaders th:not(:first-child),
+table.dot-leaders td:not(:first-child) span{
+	padding-left: .5em;
+}
+
+table.dot-leaders tbody td:first-child{
 	max-width: 75%;
 }
 
-table th:last-child,
-table td:last-child{
+table.dot-leaders th:last-child,
+table.dot-leaders td:last-child{
 	text-align: right;
 	vertical-align: bottom;
 }
 
-table .dot-leaders td span{
+table.dot-leaders tbody td span{
 	background-color: white;
 }
 
 @media (prefers-color-scheme: dark){
-	table .dot-leaders td span{
-		display: inline-block;
-		background: transparent;
-		backdrop-filter: blur(100px);
-		-webkit-backdrop-filter: blur(100px);
+	/* HACK: Use linear-gradients to bypass iBook’s background removal */
+	table.dot-leaders {
+		background-image: linear-gradient(black, black);
+		padding: .5em 1em;
+		margin: .5em 0;
+		border-radius: 4px;
+	}
+	table.dot-leaders tbody td span{
+		background-image: linear-gradient(black, black);
 	}
 }
 
-table .dot-leaders tr{
+table.dot-leaders tbody td {
 	background-image: radial-gradient(currentColor .055em, transparent 0);
-	background-size: .9em 1em;
+	background-size: .75em .5lh;
 	background-repeat: repeat-x;
 	background-position: left bottom;
 }
 
-table .dot-leaders td{
+table.dot-leaders td{
 	padding: 0;
 }
