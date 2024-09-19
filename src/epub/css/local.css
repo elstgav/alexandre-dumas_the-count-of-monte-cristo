@@ -38,6 +38,7 @@ section[epub|type~="chapter"] > p:first-of-type::first-letter{
 	font-size: 3.6rlh;
 	font-weight: normal !important; /* Prevent theme bolding */
 	line-height: 1;
+	text-transform: none;
 
 	margin-top: -.25rlh;
 	margin-right: .12rem;
@@ -46,6 +47,7 @@ section[epub|type~="chapter"] > p:first-of-type::first-letter{
 
 section[epub|type~="chapter"] > p:first-of-type::first-line{
 	font-variant: small-caps;
+	text-transform: lowercase;
 }
 
 blockquote{
